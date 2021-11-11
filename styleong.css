@@ -2,26 +2,37 @@ body {
     background: rgba(0, 0, 0, 0.548);
 }
 
-
 .container{
-    background: rgba(0, 0, 0, 0.342);
+    background: rgba(0, 0, 0, 0.274);
     color: rgb(255, 255, 0);
     height: 80px;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border-radius: 50px;
+    border-radius: 20px;
     border: solid rgba(255, 255, 0, 0.562);
+    
+    
+    
+}
+
+.container nav button:hover {
+    width: 120px;
+    transition: width 1s;
+    border-radius: 20px ;
+    background: rgba(0, 0, 255, 0.397);
+    text-transform:uppercase
+    
     
 }
 
 .meadote {
-    background: rgba(0, 0, 0, 0.61);
+    background: rgba(0, 0, 0, 0);
     color:yellow;
     text-align: center;
-    border-radius: 10px;
-    border: solid rgba(255, 255, 0, 0.548)
+    
+    
 }
 
 .todoscont {
@@ -32,6 +43,7 @@ body {
     width: 60%;
     padding-right: 25px;
     
+    
 }
 .cont {
     background: rgba(255, 255, 0, 0.87);
@@ -39,6 +51,7 @@ body {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    font-weight: bold
     }
 
 .container2 {
@@ -58,8 +71,15 @@ body {
     border-radius: 150px;
     margin: 10px;
     border: solid rgba(255, 255, 0, 0.527);
+    transition: width 1s;
     
     
+}
+
+.container2 img:hover {
+    width: 250px;
+    border-radius: 50px;
+    border: none
 }
 
 .rodape {
@@ -73,6 +93,11 @@ body {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 640px) {
     .logo { display:none }
+    .container2 img {
+        width: 300px;
+        height: 350px;
+        
+    }
 }
